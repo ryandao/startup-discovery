@@ -1,0 +1,10 @@
+{{#each category in categories}}
+  <legend><small><strong>{{category.name}}</strong></small></legend>
+  {{#each tag in category.tags}}
+    {{view StartupDiscovery.TagView
+      tagNameValueBinding = "tag.name"
+      tagIdValueBinding = "tag.id"
+      clickBinding = "addOrRemoveTagInQuery"
+    }}
+  {{/each}}
+{{/each}}

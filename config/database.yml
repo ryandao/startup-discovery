@@ -1,0 +1,14 @@
+development:
+  adapter: postgresql
+  encoding: utf8
+  database: startup_discovery_dev
+
+test:
+  adapter: postgresql
+  encoding: utf8
+  database: startup_discovery_test
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: startup_discovery_production

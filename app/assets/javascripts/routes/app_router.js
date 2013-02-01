@@ -1,0 +1,3 @@
+StartupDiscovery.Router.map(function() {
+
+});
