@@ -1,7 +1,7 @@
 StartupDiscovery.IndexController = Ember.Controller.extend({
   categories: null,
-
   searchTags: [],
+  searchResults: null,
 
   addOrRemoveTagInQuery: function(event) {
     var view = this;

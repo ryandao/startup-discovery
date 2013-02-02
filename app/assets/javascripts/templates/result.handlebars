@@ -1,3 +1,5 @@
 <div class="container">
-  <span>No results found</span>
+  {{#each result in searchResults}}
+    <span>{{result.name}}</span>
+  {{/each}}
 </div>
