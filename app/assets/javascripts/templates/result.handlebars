@@ -1,5 +1,5 @@
-<div class="container">
-  {{#each result in searchResults}}
-    <span>{{result.name}}</span>
-  {{/each}}
-</div>
+{{#each result in searchResults}}
+  <div class="result-container">
+    <a target="blank" {{bindAttr href="result.company_url"}}><img {{bindAttr src="result.img_url"}} /></a>
+  </div>
+{{/each}}
