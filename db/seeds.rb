@@ -60,7 +60,7 @@
 
 [
   {
-    :name => 'BoatBound',
+    :name => 'Boatbound',
     :img_url => 'https://s3.amazonaws.com/photos.angel.co/startups/i/146025-33270c516b44cb3a16a469932598747a-thumb_jpg.jpg?buster=1355260805',
     :description => 'Airbnb for boat rentals'
   },
