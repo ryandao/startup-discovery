@@ -24,8 +24,14 @@ task :angellist_scrape => :environment do |t|
 
   log.info "Scraping finished on #{DateTime.now}"
   puts "Scraping finished on #{DateTime.now}"
+end
 
+task :scrape_angellist_url, [:url] => :environment do |t, args|
+  require 'open-uri'
+  require 'nokogiri'
+  require 'logger'
 
+  create_startup_from_url(args[:url])
 end
 
 def create_startup_from_url(url)
