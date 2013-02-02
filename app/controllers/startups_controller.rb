@@ -1,7 +1,11 @@
 class StartupsController < ApplicationController
   # GET /startups.json
   def index
-    @startups = Startup.all
+    if params[:tags]
+      @startups = Startup.have_tags(params[:tags])
+    else
+      @startups = Startup.all
+    end
 
     respond_to do |format|
       format.json { render json: @startups }
