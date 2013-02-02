@@ -4,7 +4,7 @@ class CategoriesController < ApplicationController
     @categories = Category.all
 
     respond_to do |format|
-      format.json { render json: @categories }
+      format.json { render json: @categories.as_json(:only => [:name, :id], :include => { :tags => {:only => [:name, :id]} }) }
     end
   end
 
@@ -13,7 +13,7 @@ class CategoriesController < ApplicationController
     @category = Category.find(params[:id])
 
     respond_to do |format|
-      format.json { render json: @category }
+      format.json { render json: @category.to_json(:include => :tags) }
     end
   end
 
