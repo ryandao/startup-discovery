@@ -24,5 +24,5 @@ StartupDiscovery.IndexController = Ember.Controller.extend({
   search: function() {
     this.set('searchResults', StartupDiscovery.Startup.find({tags: this.get('searchTags')}))
     console.log(this.get('searchTags'));
-  }
+  },
 });

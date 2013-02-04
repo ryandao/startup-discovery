@@ -1,5 +1,6 @@
 {{#each result in searchResults}}
-  <div class="result-container">
-    <a target="blank" {{bindAttr href="result.company_url"}}><img {{bindAttr src="result.img_url"}} /></a>
-  </div>
+  {{view StartupDiscovery.CompanyPhotoView
+    startupIDBinding="result.id"
+    tagListBinding="result.tags"
+  }}
 {{/each}}

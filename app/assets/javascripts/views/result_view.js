@@ -1,3 +1,7 @@
 StartupDiscovery.ResultView = Ember.View.extend({
-  templateName: 'result'
+  templateName: 'result',
+
+  didInsertElement: function() {
+    // debugger;
+  }
 });
