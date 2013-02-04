@@ -8,7 +8,7 @@ class StartupsController < ApplicationController
     end
 
     respond_to do |format|
-      format.json { render json: @startups }
+      format.json { render json: @startups.as_json(:include => { :tags => {:only => [:name, :id]} }) }
     end
   end
 
@@ -17,7 +17,7 @@ class StartupsController < ApplicationController
     @startup = Startup.find(params[:id])
 
     respond_to do |format|
-      format.json { render json: @startup }
+      format.json { render json: { startup: @startup }}
     end
   end
 
