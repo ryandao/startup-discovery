@@ -10,47 +10,47 @@
   {
     :name => 'Space',
     :tags_attributes => [
-      { :name => 'boating' },
-      { :name => 'cloud' },
-      { :name => 'social analytics' },
-      { :name => 'mobile gaming' },
-      { :name => 'social media' },
-      { :name => 'photo sharing' }
+      { :name => 'Boating' },
+      { :name => 'Cloud' },
+      { :name => 'Social analytics' },
+      { :name => 'Mobile gaming' },
+      { :name => 'Social media' },
+      { :name => 'Photo sharing' }
     ]
   },
 
   {
     :name => 'Business model',
     :tags_attributes => [
-      { :name => 'freemium' },
-      { :name => 'advertising' },
-      { :name => 'product sales' },
-      { :name => 'enterprise' },
-      { :name => 'collaborative consumption' },
-      { :name => 'subscription' }
+      { :name => 'Freemium' },
+      { :name => 'Advertising' },
+      { :name => 'Product sales' },
+      { :name => 'Enterprise' },
+      { :name => 'Collaborative consumption' },
+      { :name => 'Subscription' }
     ]
   },
 
   {
     :name => 'Founders',
     :tags_attributes => [
-      { :name => 'technical' },
+      { :name => 'Technical' },
       { :name => 'Stanford' },
-      { :name => 'designer' },
+      { :name => 'Designer' },
       { :name => 'MIT' },
-      { :name => 'serial entrepreneur' },
-      { :name => 'fresh graduate' }
+      { :name => 'Serial entrepreneur' },
+      { :name => 'Fresh graduate' }
     ]
   },
 
   {
     :name => 'Culture',
     :tags_attributes => [
-      { :name => 'flexible' },
-      { :name => 'casual' },
-      { :name => 'fun' },
-      { :name => 'business' },
-      { :name => 'young' }
+      { :name => 'Flexible' },
+      { :name => 'Casual' },
+      { :name => 'Fun' },
+      { :name => 'Business' },
+      { :name => 'Young' }
     ]
   }
 ].each { |category|
