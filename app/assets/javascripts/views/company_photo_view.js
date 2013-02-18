@@ -9,7 +9,7 @@ StartupDiscovery.CompanyPhotoView = Ember.View.extend({
       placement: 'left',
       title: tagNameList.join(", ")
     };
-    debugger;
+
     $('.result-container', this.get('element')).tooltip(tooltipOptions);
   }
 });

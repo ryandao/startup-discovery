@@ -1,4 +1,4 @@
-StartupDiscovery.IndexController = Ember.Controller.extend({
+StartupDiscovery.StartupsController = Ember.Controller.extend({
   categories: null,
   searchTags: [],
   searchResults: null,
